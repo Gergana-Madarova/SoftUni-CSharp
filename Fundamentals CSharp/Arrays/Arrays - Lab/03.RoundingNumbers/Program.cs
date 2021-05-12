@@ -14,7 +14,7 @@ namespace _03.RoundingNumbers
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                int roundedNumber = (int)Math.Round(numbers[i], MidpointRounding.AwayFromZero);
+                var roundedNumber = Math.Round(numbers[i], MidpointRounding.AwayFromZero);
                 Console.WriteLine($"{numbers[i]} => {roundedNumber}");
             }
         }
