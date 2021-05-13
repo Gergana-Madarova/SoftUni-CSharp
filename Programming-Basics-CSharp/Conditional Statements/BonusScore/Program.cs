@@ -6,38 +6,37 @@ namespace BonusScore
     {
         static void Main()
         {
-            int CountScore = int.Parse(Console.ReadLine());
+            int countScore = int.Parse(Console.ReadLine());
 
             double bonus = 0;
-            double TotalScore = 0.0;
+            double totalScore = 0.0;
 
-            if (CountScore <= 100)
+            if (countScore <= 100)
             {
                 bonus += 5;
             }
-            else if (CountScore > 1000)
+            else if (countScore > 1000)
             {
-                bonus += (0.1 * CountScore);
+                bonus += (0.1 * countScore);
             }
             else
             {
-                bonus += +(0.2 * CountScore);
+                bonus += +(0.2 * countScore);
             }
 
-            if (CountScore % 2 == 0)
+            if (countScore % 2 == 0)
             {
                 bonus += 1;
             }
-            else if (CountScore % 10 == 5)
+            else if (countScore % 10 == 5)
             {
                 bonus += 2;
             }
 
-            TotalScore = CountScore + bonus;
+            totalScore = countScore + bonus;
 
             Console.WriteLine(bonus);
-            Console.WriteLine(TotalScore);
-
+            Console.WriteLine(totalScore);
         }
     }
 }
