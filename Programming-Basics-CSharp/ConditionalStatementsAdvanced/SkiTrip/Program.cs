@@ -26,15 +26,15 @@ namespace SkiTrip
                 case "apartment":
                     {
                         price = (days - 1) * 25;
-                        if (days<10 && days>=0)
-                        {                          
+                        if (days < 10 && days >= 0)
+                        {
                             price = price - 0.30 * price;
                         }
-                        else if (days>=10 && days<=15)
-                        {                           
+                        else if (days >= 10 && days <= 15)
+                        {
                             price = price - 0.35 * price;
                         }
-                        else if (days>15 && days<=365)
+                        else if (days > 15 && days <= 365)
                         {
                             price = price - 0.50 * price;
                         }
@@ -44,7 +44,7 @@ namespace SkiTrip
                     {
                         price = (days - 1) * 35;
                         if (days < 10 && days >= 0)
-                        {                           
+                        {
                             price = price - 0.10 * price;
                         }
                         else if (days >= 10 && days <= 15)
@@ -66,12 +66,13 @@ namespace SkiTrip
             if (rating == "positive")
             {
                 price = price + 0.25 * price;
-            } 
+            }
             else if (rating == "negative")
             {
                 price = price - 0.10 * price;
             }
-                Console.WriteLine($"{price:f2}");
+
+            Console.WriteLine($"{price:f2}");
         }
     }
 }
