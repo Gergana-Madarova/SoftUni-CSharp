@@ -10,8 +10,8 @@ namespace PasswordGuess
             double distanceМ = double.Parse(Console.ReadLine());
             double timeInSecForM = double.Parse(Console.ReadLine());
 
-            string outPut;
-            double timeIvan;
+            string outPut = string.Empty;
+            double timeIvan = 0.0;
 
             //съпротивлението на водата го забавя на всеки 15 м. с 12.5 секунди
             if (distanceМ < 15)
