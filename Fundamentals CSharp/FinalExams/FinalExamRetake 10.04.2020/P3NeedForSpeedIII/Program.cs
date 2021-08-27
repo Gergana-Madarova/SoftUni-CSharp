@@ -13,6 +13,9 @@ namespace P3NeedForSpeedIII
             //или Dictionary<string, List<int>> cars = new Dictionary<string, List>();
             Dictionary<string, Dictionary<string, int>> cars = new Dictionary<string, Dictionary<string, int>>();
 
+            List<string> w = new List<string>();
+            
+
             for (int i = 0; i < numOfCars; i++)
             {
                 //{car}|{mileage}|{fuel}
